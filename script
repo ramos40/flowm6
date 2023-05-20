@@ -8,5 +8,5 @@ pub fun main(acc: Address, _id: UInt64): &NonFungibleToken.NFT {
 
     let ids = pubRef.getIDs()
 
-    return pubRef.borrowWholeNFT(id: ids[_id])
+    return pubRef.borrowAuthNFT(id: ids[_id])
 }
